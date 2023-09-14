@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-# Baca citra
+# Load an image
 image = cv2.imread('original_image.jpg', cv2.IMREAD_GRAYSCALE)
 
 # Buat filter Gaussian

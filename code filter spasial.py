@@ -12,11 +12,11 @@ kernel = np.array([[1, 2, 1],
 # Terapkan filter ke citra
 filtered_image = cv2.filter2D(image, -1, kernel)
 
-# Save the equalized image
+# Save the filtered_image
 output_path = 'filtered_image.jpg'
 cv2.imwrite(output_path, filtered_image)
 
-# Display the original and equalized images (optional)
+# Display the original and filtered_image (optional)
 cv2.imshow('Original Image', image)
 cv2.imshow('filtered Image', filtered_image)
 cv2.waitKey(0)

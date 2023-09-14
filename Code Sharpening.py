@@ -9,11 +9,11 @@ kernel = np.array([[-1,-1,-1],
                    [-1,-1,-1]])
 sharpened_image = cv2.filter2D(image, -1, kernel)
 
-# Save the equalized image
+# Save the sharpened_image
 output_path = 'sharpened_image.jpg'
 cv2.imwrite(output_path, sharpened_image)
 
-# Display the original and equalized images (optional)
+# Display the original and sharpened_image (optional)
 cv2.imshow('Original Image', image)
 cv2.imshow('Sharpened Image', sharpened_image)
 cv2.waitKey(0)
